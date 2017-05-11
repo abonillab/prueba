@@ -1,0 +1,12 @@
+<form name="formBasic" data-ng-submit="nextStep()" role="form" class="ui form" novalidate>
+
+  <div class="field">
+    <label for={{param}} class="font-title active-lbl" id="lblDocumet">{{label}}</label>
+
+    <input class="active" type="tel" id={{param}} name="paramName" ng-model="value" autocomplete="off" data-input-mask autofocus >
+
+    <p ng-show="formSubmitted && hasError" class="error-msg">{{errorMessage}}</p>
+
+    <input name="btnNext" type="submit" class="btn btn-primary" value="Siguiente">
+  </div>
+</form>

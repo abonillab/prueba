@@ -1,0 +1,9 @@
+<progress-bar active = "4"></progress-bar>
+
+<main class="ui form">
+  <last-request-new title="Declaración de origen de recursos" icon="images/map@2x.png" message="{{savedValues.assetsDeclaration ? 'Si' : 'No'}}"></last-request-new>
+
+  <boolean-input next-url="/green-card" param="usaLongTimeVisitor"
+                 label="¿Has permanecido más de 183 días durante los últimos 3 años en los Estados Unidos?"
+                 ps-note="Esta pregunta no tiene ningún impacto en la apertura de tu cuenta." />
+</main>

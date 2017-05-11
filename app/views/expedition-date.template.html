@@ -1,0 +1,8 @@
+<progress-bar active = "2"></progress-bar>
+
+<!-- Bloque principal ultimo seleccionado!-->
+<main class="ui form">
+  <last-request-new title="Ciudad de nacimiento:" icon="images/calendar@2x.png" message="{{savedValues.borncity}}"></last-request-new>
+
+  <date-input next-url="/expeditionCity" param="expeditionDate" label="¿Cuándo se expidió tu documento de identificación?" min-years-ahead="18" base-date-param-name="birthDate"></date-input>
+</main>

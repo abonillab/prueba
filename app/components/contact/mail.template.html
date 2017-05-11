@@ -1,0 +1,24 @@
+<progress-bar active = "2"></progress-bar>
+
+<main class="ui form"> <last-request
+	lista="{{prevGenero}}"></last-request>
+	
+<form name="formBasic " data-ng-submit="mailValid()"
+	role="form" novalidate>
+	<div class="field">
+		<label for="email-client" class=" font-title active-lbl"
+			id="lbl-email">¿Cuál es tu correo electrónico?</label>
+			<input
+			class="active" type="text" id="email-client"
+			name="emailClient" ng-model="email" autocomplete="off"
+			autofocus placeholder="mi@correo.com">
+			<div class="input-line"></div>
+		<div ng-show="formBasic.$submitted">
+			<small class="error-msg"
+				ng-show="!validMail">El correo no cumple con el formato usuario@correo.com</small>
+		</div>
+	</div>
+	<input name="btnNext" id="btnNextIncome" type="submit"
+		class="btn btn-primary" value="Siguiente" ng-disabled="!email">
+</form>
+</main>

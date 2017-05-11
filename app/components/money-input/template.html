@@ -1,0 +1,15 @@
+<form name="formBasic" data-ng-submit="nextStep()" role="form" class="ui form" novalidate>
+
+  <div class="field">
+    <label for={{param}} class="font-title active-lbl" id="lblDocumet">{{label}}</label>
+	<div>
+    <label class="currency">$</label>
+    <input style="padding-left: 20px !important"  type="tel" id={{param}} name="paramName" ng-model="value" autocomplete="off" data-money-mask autofocus focus-error="formBasic.$invalid" min-currency="{{min}}" max-currency="{{max}}" autofocus >
+	 </div>
+	 <div class="line"></div>
+	 <p ng-show="formSubmitted && hasError" class="error-msg">{{formBasic.paramName.$error.msg}} </p>
+	<span class="mns-aclaratorio " id="lblSecondId" >{{second}}</span></br>	
+	</div>
+    <input name="btnNext" type="submit" class="btn btn-primary" value="Siguiente" data-ng-disabled="!value">
+ 
+</form>

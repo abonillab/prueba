@@ -1,0 +1,7 @@
+<progress-bar  active="4" ></progress-bar>
+
+<main  class="ui form">
+     <last-request-new title="{{savedValues.occupation=='Asalariado'?'Tel\u00E9fono de la empresa:':savedValues.occupation=='Independiente'?'Actividad principal':'Ocupaci\u00F3n'}}" icon="images/wallet@2x.png" 
+     message="{{savedValues.occupation=='Asalariado'?savedValues.numberPhoneCompany:savedValues.occupation=='Independiente'? savedValues.mainActivity :savedValues.occupation}}"  ></last-request-new>
+    <money-input next-url="/monthlyOutcome" param="monthlyIncome" label="¿Cu&aacute;nto es el total de tus ingresos mensuales?" min="1" max="9999999"></money-input>    
+</main>

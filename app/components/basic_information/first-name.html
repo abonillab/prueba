@@ -1,0 +1,44 @@
+<progress-bar active = "2"></progress-bar>
+
+
+<div data-ng-controller="BasicInformationController">
+
+	<main class="ui form inner-container">
+
+    <div ng-controller="MainController">
+      <last-request-new title="Número de cédula:" icon="images/profile@2x.png" message={{savedValues.identityNumber}}></last-request-new>
+    </div>
+
+		<form name="formBasic " data-ng-submit="validateAndContinue('/middle_name')"
+			role="form" novalidate>
+			<div class="row">
+				<div class="col-xs-12 field"
+					data-ng-class="getErrorClass(formBasic.txtFirstName,formBasic.$submitted)">
+
+					<div class="">
+						<label for="txtFirstName" class=" font-title active-lbl"
+							id="lblDocumet">¿Cu&aacute;l es tu primer nombre? </label>
+					</div>
+
+					<input class="active" type="text" id="txtFirstName"
+						name="txtFirstName" data-ng-model="firstName" maxlength="180"
+						required data-data-ng-class="formBasic.$invalid?error:''"
+						autocomplete="off" input-focus="flap" autofocus
+						focus-error="formBasic.$invalid"
+						capitalize alpha-input>
+
+					<div class="line"></div>
+
+					<div data-ng-show="formBasic.$submitted">
+						<small class="error-msg"
+							data-ng-show="formBasic.txtFirstName.$error.required || formBasic.txtFirstName.$error.maxlength">Valida
+							tu primer nombre.</small>
+					</div>
+				</div>
+			</div>
+
+			<input id="btnNextFirstName" name="btnNextFirstName" type="submit" class=" btn btn-primary"
+				value="Siguiente" data-ng-disabled = "!firstName">
+		</form>
+	</main>
+</div>

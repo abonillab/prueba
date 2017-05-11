@@ -1,0 +1,36 @@
+<progress-bar title="'Proceso de apertura de'" second="'cuenta de ahorro ' + savedValues.accountType" ></progress-bar>
+
+<main>
+  <div class="prepopulate-identity">
+    <h2 class="title">Número de cédula:</h2>
+    <p class="description">{{savedValues.identityNumber}}</p>
+  </div>
+
+  <br><br>
+
+  <h2 class="prepopulate-greatings">
+    <b>Hola {{savedValues.firstName}}</b>, nos alegra que quieras abrir una nueva cuenta con nosotros.
+  </h2>
+
+  <p class="start-message">Para empezar, por favor verifica que la información presentada esté actualizada.</p>
+
+  <p class="change-if-needed">Si quieres modificar algo presiona sobre el dato para editarlo</p>
+
+  <br>
+  <div class="contact-info">
+    <p class="title">Correo electrónico de contacto</p>
+    <p class="description">{{savedValues.email}}</p>
+  </div>
+
+  <br>
+  <div class="contact-info">
+    <p class="title">Teléfono celular</p>
+    <p class="description">{{savedValues.cellphone}}</p>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <a href="#" class="btn btn-primary">Continuar</a>
+
+</main>

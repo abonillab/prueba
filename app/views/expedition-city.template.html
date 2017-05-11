@@ -1,0 +1,16 @@
+<progress-bar active = "2"></progress-bar>
+
+<!-- Bloque principal ultimo seleccionado!-->
+<main class="ui form">
+  <last-request-new title="Fecha de expedición de documento:" icon="images/location-pin@2x.png" message="{{savedValues.expeditionDate}}"></last-request-new>
+
+  <angucomplete param="expeditionCity"
+                pause="400"
+                selectedobject="value"
+                label="¿Y dónde se expidió?"
+                next-url="/gender"
+                show-suggest="true"
+                url="/components/cities/cities.json?s="
+                titlefield="description"
+                inputclass="active"/>
+</main>

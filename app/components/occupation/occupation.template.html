@@ -1,0 +1,57 @@
+<progress-bar active = "3"></progress-bar>
+
+<!-- Directiva Alfabetica -->
+<main class="ui form"> <last-request
+	lista="{{livingCityQuestion}}"></last-request>
+
+
+<form name="formBasic " data-ng-submit="continueOccupation()"
+	role="form" novalidate>
+	<div class="row">
+		<div class="col-xs-12 field "
+			data-ng-class="getErrorClass(formBasic.numberId,formBasic.$submitted)">
+
+			<div class="">
+				<label for="identityNumbe" class=" font-title active-lbl"
+					id="lblDocumet">{{firstName}} ahora, por favor selecciona tu ocupación actual</label>
+			</div>
+			
+			
+			<div style="margin-top: 42px">
+			<div class="card">
+			<div class="card-titulo">Asalariado</div>
+			<div class="card-content">Si tienes un contrato laboral con una empresa.</div>
+			<div class="card-button">
+			 <input name="btnNext" id="btnAsalariado" type="submit" class=" btn btn-primary" value="Seleccionar" data-ng-click="seleccionarOcupacion('Asalariado')">
+			 </div>        
+			</div>
+			
+			<div class="card">
+			<div class="card-titulo">Independiente</div>
+			<div class="card-content">Si desarrollas una actividad comercial pero no tienes contrato laboral con una empresa.</div>
+			<div class="card-button">
+			 <input name="btnNext" id="btnIndependiente" type="submit" class=" btn btn-primary" value="Seleccionar" data-ng-click="seleccionarOcupacion('Independiente')">
+			 </div>   
+			</div>
+			</div>
+			<div style="margin-top: 42px">
+			<div class="card">
+			<div class="card-titulo">Pensionado</div>
+			<div class="card-content">Si ya estas pensionado</div>
+			<div class="card-button">
+			 <input name="btnNext" id="btnPensionado" type="submit" class=" btn btn-primary" value="Seleccionar" data-ng-click="seleccionarOcupacion('Pensionado')">
+			 </div>   
+			</div>
+			
+			<div class="card">
+				<div class="card-titulo">Otro</div>
+			<div class="card-content">Cualquier otra ocupación cómo ama de casa, o estudiante.</div>
+			<div class="card-button">
+			 <input name="btnNext" id="btnOtro" type="submit" class=" btn btn-primary" value="Seleccionar"  data-ng-click="seleccionarOcupacion('Otro')">
+			 </div> 
+			</div>
+			</div>
+		</div>
+	</div>
+</form>
+</main>

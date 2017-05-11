@@ -1,0 +1,14 @@
+i.photo.icon {
+  font-size: 1.8 * $base-size !important;
+  margin-top: 1.6 * $base-size !important;
+}
+
+i.help-icon {
+  margin-left: 0.8 * $base-size !important;
+  color: $grey;
+  font-size: 0.8 * $base-size !important;
+}
+
+i.help-icon:hover {
+  color: $blue;
+}

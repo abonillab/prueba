@@ -1,0 +1,81 @@
+$font-family: OpenSans;
+$font-title: DTLArgoT;
+$font-subtitle: OpenSans;
+
+h1 {
+  font-size: 0.8 * $base-size;
+}
+
+h2 {
+  font-size: 0.45 * $base-size;
+}
+
+h3 {
+  font-size: 0.4 * $base-size;
+}
+
+h4 {
+  font-size: 0.35 * $base-size;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-title {
+   font-family: $font-title;
+   line-height: 1.25;
+}
+
+.font-title-bold {
+   font-family: $font-title;
+   font-weight: bold;
+}
+
+.font-subtitle {
+  font-family: $font-subtitle;
+  line-height: 1.67;
+}
+
+.font-subtitle-light {
+  font-family: $font-subtitle;
+  font-weight: lighter;
+}
+
+.blue-text {
+  color: $blue-font;
+}
+
+.emoji-top {
+	opacity: 0.2;
+    width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+
+.emoji-phone {
+	width: 18px;
+	height: 32px;
+}
+
+@font-face {
+    font-family: DTLArgoT;
+    src: url(../public/fonts/DTLArgoT.otf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../public/fonts/OpenSans-Regular.ttf);
+}

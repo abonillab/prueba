@@ -1,0 +1,18 @@
+<progress-bar active = "2"></progress-bar>
+
+<main class="ui form">
+  <div ng-controller="MainController">
+    <last-request-new title="Fecha de nacimiento:" icon="images/location-pin@2x.png" message="{{savedValues.birthDate}}"></last-request-new>
+  </div>
+
+  <angucomplete param="borncity"
+                pause="400"
+                selectedobject="value"
+                label="¿En qu&eacute; ciudad?"
+                next-url="/expeditionDate"
+                url="/components/cities/cities.json?s="
+                titlefield="description"
+                inputclass="active"
+                show-suggest="true"
+                />
+</main>

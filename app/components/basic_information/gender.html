@@ -1,0 +1,49 @@
+<progress-bar active = "2"></progress-bar>
+
+<div data-ng-controller="BasicInformationController">
+
+	<main class="ui form inner-container">
+
+    <div ng-controller="MainController">
+      <last-request-new title="Lugar de expedición de documento:" icon="images/group@3x.png" message={{savedValues.expeditionCity}} />
+    </div>
+
+	<form name="formBasic " data-ng-submit="validateAndContinue('/email')"
+		role="form" novalidate>
+		<div class="row">
+			<div class="col-xs-12 field"
+				data-ng-class="getErrorClass(formBasic.rbtnGender,formBasic.$submitted)">
+
+				<div class="">
+					<label for="rbtnGender" class=" font-title active-lbl" id="lblDocumet">¿Cu&aacute;l es tu g&eacute;nero? </label>
+				</div>
+
+        <radio-button option1=optionM option2=optionF model=gender>
+
+
+				<div class="radio-item">
+					<input type="radio" name="rbtnGender" id="rbtnGenderMale"
+						data-ng-model="gender" value="M" /> <label
+						for="rbtnGenderMale"
+						data-ng-class="gender === 'M' ? 'rbtn-label-active' : 'rbtn-label'">Masculino</label>
+				</div>
+				<div class="radio-item">
+					<input type="radio" name="rbtnGender" id="rbtnGenderFemale"
+						data-ng-model="gender" value="F" /> <label
+						for="rbtnGenderFemale"
+						data-ng-class="gender === 'F' ? 'rbtn-label-active' : 'rbtn-label'">Femenino</label>
+				</div>
+
+				<div data-ng-show="formBasic.$submitted">
+					<small class="error-msg"
+						data-ng-show="formBasic.rbtnGender.$error.required">Valida
+						tu genero.</small>
+				</div>
+			</div>
+		</div>
+		<input id="btnNextGender" name="btnNextGender" type="submit"
+			class=" btn btn-primary" value="Siguiente" data-ng-disabled="!gender">
+
+	</form>
+	</main>
+</div>

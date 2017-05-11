@@ -1,0 +1,17 @@
+<progress-bar active = "2"></progress-bar>
+
+<!-- Bloque principal ultimo seleccionado!-->
+<main class="ui form">
+  <last-request-new title="Tu número de teléfono celular:" icon="images/location-pin@2x.png" message={{savedValues.cellphone}}></last-request-new>
+
+  <angucomplete param="city"
+                pause="400"
+                selectedobject="value"
+                label="¿En qué ciudad resides?"
+                next-url="/occupation"
+                url="/components/cities/cities.json?s="
+                titlefield="description"
+                inputclass="active"
+                show-suggest="true"
+                />
+</main>

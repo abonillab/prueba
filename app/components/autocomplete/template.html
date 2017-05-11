@@ -1,0 +1,18 @@
+<form name="formBasic" data-ng-submit="nextStep()" role="form" class="ui form search" novalidate>
+  <label for={{param}} class="font-title active-lbl" id="lblDocumet">{{label}}</label>
+  <div class="ui field icon ">
+    <input id={{param}} class="prompt active" type="text" name="paramName" ng-model="value" ng-change="validateSuggest()" >
+    <div class="line"></div>
+  </div>
+  <div class="results"></div>
+  <p ng-show="!isValid" class="error-msg">Este campo es requerido</p>
+  <div ng-show="showSuggest">
+  	<suggest-list 
+    value="suggest"
+    model="value"
+    valid-value="isValidValue"
+    actividades="actividades"
+    model-suggest="valueAutocomplete"></suggest-list>
+  </div>
+  <input name="btnNext" type="submit" class="btn btn-primary" value="Siguiente" data-ng-disabled="!isValidValue">
+</form>

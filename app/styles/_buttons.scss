@@ -1,0 +1,87 @@
+$btn-font-size: 0.4 * $base-size;
+$btn-height: 1.4 * $base-size;
+$btn-color:#002c76;
+// TODO: use parameters on margin and padding
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0 .25em 0 0;
+  padding: .78571429em 1.5em;
+  font-weight: bold;
+  line-height: 1em;
+  height: $btn-height;
+  font-size: $btn-font-size !important;
+  border-radius: $btn-radius !important;
+  text-decoration: none !important;
+}
+
+.btn:disabled {
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+a.btn {
+  padding-top: 0.5 * $base-size !important;
+}
+
+a.btn:active {
+    color: white !important;
+}
+
+//------------------
+// normal buttons
+//------------------
+
+@mixin btn-with-color($btn-color) {
+  border-style: none !important;
+  background: 0 0;
+  box-shadow: 0 0 0 2px $btn-color inset;
+  color: $btn-color;
+  min-width: 3 * $base-size;
+}
+
+@mixin btn-active-with-color($btn-color) {
+  background-color: $btn-color;
+  color: white;
+  min-width: 3 * $base-size;
+}
+
+.btn-primary { @include btn-with-color($primary); }
+.btn-primary:active { @include btn-active-with-color($primary); }
+
+.btn-danger { @include btn-with-color($error); }
+.btn-danger:active, .btn-danger:hover { @include btn-active-with-color($error); }
+
+//------------------
+// inverse buttons
+//------------------
+
+@mixin btn-with-color-inverse($btn-color) {
+  background-color: $btn-color;
+  color: white;
+}
+
+@mixin btn-active-with-color-inverse($btn-color) {
+  background: 0 0;
+  box-shadow: 0 0 0 2px $btn-color inset;
+  color: $btn-color;
+}
+
+.btn-inverse-secondary { @include btn-with-color-inverse($secondary); }
+.btn-inverse-secondary:active, .btn-inverse-secondary:hover { @include btn-active-with-color-inverse($secondary); }
+
+.rbtn-label{
+	font-size: 24px !important;
+	font-weight: 300 !important;
+	line-height: 1.67 !important;
+	color: #282828 !important;
+	margin-left: 16px;
+}
+
+.rbtn-label-active{
+	font-size: 24px !important;
+	font-weight: bold !important;
+	line-height: 1.67 !important;
+	color: #282828 !important;
+}

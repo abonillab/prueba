@@ -1,0 +1,53 @@
+.prepopulate-identity {
+
+  .title, .description {
+    opacity: 0.5;
+  	font-size: 0.6 * $base-size;
+  	line-height: 1.33;
+  	color: $grey !important;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .description {
+    font-weight: 300;
+  }
+}
+
+.prepopulate-greatings {
+	font-size: 0.8 * $base-size;
+	font-weight: 300;
+	line-height: 1.5;
+	color: $blue;
+}
+
+.start-message {
+	font-size: 0.6 * $base-size;
+	font-weight: 300;
+	line-height: 1.33;
+	color: black;
+}
+
+.change-if-needed {
+	font-size: 0.4 * $base-size;
+	font-weight: 300;
+	line-height: 2;
+	color: $grey;
+}
+
+.contact-info {
+  .title {
+    font-size: 0.4 * $base-size;
+    font-weight: bold;
+    line-height: 2.0;
+    color: $blue;
+	}
+	.description {
+    font-size: 0.7 * $base-size;
+    font-weight: 300;
+    line-height: 1.14;
+    color: black;
+	}
+}

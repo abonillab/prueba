@@ -1,0 +1,8 @@
+ <h2 for={{param}} class="font-title active-lbl">{{label}}</h2>
+ <p class="question-ps-note">{{psNote}}</p>
+ <form name="formBasic" role="form" class="ui form" novalidate>
+  <div class="field">
+    <input name="btnNext" id="{{param + 'Yes'}}" type="submit" class="btn btn-primary" value="Si" ng-click="nextStep(true)" />
+    <input name="btnNext" id="{{param + 'No' }}" type="submit" class="btn btn-primary" value="No" ng-click="nextStep(false)" />
+  </div>
+</form>

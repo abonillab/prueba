@@ -1,0 +1,95 @@
+.ui.form .field {
+  margin-bottom: 1.2 * $base-size !important;
+
+  label {
+    font-size: 0.8 * $base-size;
+    padding-bottom: 0.08 * $base-size;
+    color: $grey;
+  }
+
+  input[type="tel"], input[type="text"], input[type="number"], select, option {
+    font-size: 0.5 * $base-size;
+    padding-left: (0.15 * $base-size) !important;
+  }
+
+  select {
+    margin-top: 0.2 * $base-size;
+    color: $grey;
+  }
+}
+
+#take-picture-btn {
+}
+
+.ui.selection.dropdown {
+  padding-left: 0 !important;
+}
+
+.ui.form {
+  width: 100%;
+}
+
+.ui .field {
+  width: 100%;
+  input, select { border: 0 !important; }
+}
+
+.active-label {
+  color: $light-blue !important;
+  font-size: (1.0 * $base-size) !important;
+  padding-bottom: 0.2 * $base-size !important;
+  -webkit-transition: width 0.4s; /* Safari */
+  transition: font-size 0.4s;
+}
+
+.inline-label {
+  display: inline !important;
+}
+
+.radio {
+  label {
+    font-size: 0.5 * $base-size !important;
+    color: $grey !important;
+    margin-top: 0.5 * $base-size !important;
+  }
+  input {
+    font-size: 0.5 * $base-size !important;
+  }
+}
+.ui.form .grouped.fields>label {
+  color: $grey;
+  font-size: 0.8 * $base-size !important;
+}
+
+.grouped.fields {
+  margin-bottom: 2.0 * $base-size !important;
+}
+
+
+// orange color for cursor
+/*input[type="text"],input[type="password"],input[type="email"]:focus, textarea:focus {
+    color: $orange !important;
+    text-shadow: 0px 0px 0px #000;
+    -webkit-text-fill-color: transparent;
+}*/
+
+// normalize background and text colors
+input[type="text"],input[type="password"],input[type="email"], select {
+  color: $grey;
+  background: $background-color !important;
+}
+
+// fix labels crops
+label {
+  margin-bottom: 0.2 * $base-size !important;
+}
+
+.question-ps-note {
+  margin-top: 1.5 * $base-size;
+	height: 1.6 * $base-size;
+	font-family: OpenSans;
+	font-size: 0.5 * $base-size;
+	font-weight: 300;
+	line-height: 1.6;
+	color: $grey;
+}

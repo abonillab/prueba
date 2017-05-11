@@ -1,0 +1,23 @@
+<form name="formBasic" data-ng-submit="nextStep()" role="form"
+	class="ui form" novalidate>
+	<div class="field">
+
+		<label for={{inputId}} class="font-title active-lbl">{{label}}</label>
+	
+		<input class="active" type="text" id={{inputId}} name={{inputId}}
+			data-ng-model = "value" 
+			autocomplete = "off"
+			capitalize 
+			alpha-input
+			autofocus>
+		
+		<div class="line"></div>	
+		
+		<p data-ng-show="formSubmitted && hasError" class="bottom-error-msg">{{errorMessage}}</p>
+		
+		<br>
+		
+		<input name="{{buttonId}}" id="{{buttonId}}" type="submit"
+			class="btn btn-primary" value="Siguiente" data-ng-disabled = "min !== undefined && !value" >
+	</div>
+</form>

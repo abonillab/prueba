@@ -1,0 +1,15 @@
+<progress-bar active = "2"></progress-bar>
+
+<!-- Bloque principal ultimo seleccionado!-->
+<main class="ui form">
+  <last-request-new title="Fecha de nacimiento:" icon="images/location-pin@2x.png" message="{{savedValues.birthDate}}"></last-request-new>
+
+  <angucomplete param="borncity"
+                pause="400"
+                selectedobject="value"
+                label="Digita tu lugar de nacimiento"
+                next-url="/expeditionDate"
+                url="/components/cities/cities.json?s="
+                titlefield="description"
+                inputclass="active"/>
+</main>

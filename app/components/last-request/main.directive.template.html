@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col-xs-12 ">
+		<label class="template-title font-title" id="main_title" >{{lista.title}}</label>
+	</div>
+	<div class="col-xs-12 template-section-one">
+		<label  class="template-message" id="message_main" >{{lista.filter? (lista.message | mainFilter:lista.filter) : lista.message }}</label>
+	</div>
+
+
+	<div class="col-xs-12 template-section-two">
+		<img src="{{lista.icon}}" class="emoji-top" id="imgMain">
+	</div>
+</div>

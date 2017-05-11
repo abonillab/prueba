@@ -1,0 +1,43 @@
+<progress-bar active = "1"></progress-bar>
+
+
+<div class="container account-welcome">
+  <img src="../images/emoticon-happy@2x.png" class="emoji-top">
+
+  <h1 id="title-account" class="h1-title font-title">¡Muy bien! Conoce nuestras cuentas y selecciona una:</h1>
+</div>
+
+<div class="container accounts-container">
+
+  <div class="accounts-row">
+
+      <div ng-repeat="item in accountsList" class="four wide column account-column">
+
+        <div class="accounts-text-container">
+          <p class="text-center account-title">{{item.title}}</p>
+
+          <div>
+            <img src="../images/icon@2x.png" class="account-icon ">
+          </div>
+
+          <br>
+          <br>
+          <p class="account-question">{{item.question}}</p>
+
+          <div id="containter-details">
+
+          <div ng-repeat="itemDetail in item.accountDetails">
+            <p class="account-details">{{itemDetail}}</p>
+          </div>
+
+          </div>
+        </div>
+
+        <br>
+
+        <a id="{{item.id+'-button-account'}}" class="btn btn-primary account-button" ng-click="nextStep(item.title)">Seleccionar</a>
+
+      </div>
+  </div>
+
+</div>

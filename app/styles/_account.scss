@@ -1,0 +1,68 @@
+.h1-title {
+	width: 480px;
+	height: 80px;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 1.25;
+	color: $blue-font;
+}
+
+.accounts-container {
+  overflow: auto;
+}
+
+.accounts-row {
+  width: 1000px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.accounts-text-container {
+  min-height: 480px;
+  height: 264px;
+  margin-bottom: 33px;
+}
+
+.account-column {
+  width: 230px;
+  background-color: white;
+  display: inline-block;
+  margin-right: 2%;
+  white-space: normal;
+  padding: 0px 5px 15px 5px;
+  height: 608px;
+}
+
+.account-title {
+	//width: 192px;
+	//height: 32px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.6;
+	color: $blue-font;
+	padding-top: 15px;
+}
+
+.account-icon {
+	width: 48px;
+	height: 48px;
+	//background-color: #002c76;
+}
+
+.account-question {
+	//width: 192px;
+	//height: 72px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: $blue-font !important;
+	//margin:16px 16px 0px 16px;
+}
+
+.account-details {
+	font-size: 14px;
+	line-height: 1.71;
+	text-align: center;
+	color: #8a8d94;
+    margin-bottom: 10px !important;
+}

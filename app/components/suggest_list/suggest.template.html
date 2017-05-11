@@ -1,0 +1,8 @@
+<div class="ui two column grid">
+	<div class="row">
+		<div class="column" ng-repeat="item in suggest.suggestList">
+			<button type="button" class="btn-suggest"
+				ng-click="suggest.action(item)">{{item.label}}</button>
+		</div>
+	</div>
+</div>

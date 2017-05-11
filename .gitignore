@@ -1,0 +1,13 @@
+app/app.iml
+test/test.iml
+.DS_Store
+.idea/
+app/.DS_Store
+/.idea
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+.project
+.settings/

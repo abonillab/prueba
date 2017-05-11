@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Nómina",
+    "question": "¿Necesitas la cuenta para recibir tu sueldo mensual?",
+    "accountDetails": [
+      "- La cuenta nómina es la adecuada para recibir el pago mensual de tu sueldo.",
+      "- El valor de cuota de manejo mensual fue acordado entre tu empresa y el Banco.",
+      "Tu primera cuenta para vincularte con tu nuevo empleo."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Flexiahorro",
+    "question": "¿Haces varios retiros en cajeros electrónicos al mes?",
+    "accountDetails": [
+      "- Haz retiros ilimitados al mes en cajeros electrónicos pagando una única cuota de manejo mensual.",
+      "- Obtén el beneficio de 5 retiros gratis al mes en cajeros electrónicos por un valor inferior en la cuota de manejo mensual.",
+      "Tu cuenta para hacer retiros constantes."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Rentahorro",
+    "question": "¿Buscas ahorrar para un fin específico?",
+    "accountDetails": [
+      "- No será cobrado valor por cuota de manejo mensual. Este aplicará solo para el mes que hagas retiros de tu cuenta.",
+      "Tu cuenta para guardar dinero."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Libreahorro",
+    "question": "¿Buscas beneficios por el saldo que manejas?",
+    "accountDetails": [
+      "- No será cobrado valor por cuota de manejo mensual. Este aplicará solo para el mes que tengas un saldo inferior a $500.000 en tu cuenta.",
+      "Tu cuenta para tener beneficios según el saldo que manejes."
+    ]
+  }
+]

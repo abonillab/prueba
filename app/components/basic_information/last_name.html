@@ -1,0 +1,23 @@
+<div data-ng-controller="BasicInformationController">
+	
+	<progress-bar active = "2"></progress-bar>
+
+	<main class="ui form inner-container"> 
+	
+		<div ng-controller="MainController">
+			<last-request-new title="Segundo nombre:" icon="images/profile@2x.png" message={{savedValues.middleName}} />
+		</div>
+		
+		<text-input 
+			next-url = "/second_last_name"
+			param = "lastName"
+			label = "¿El primer apellido?"
+			error-message = "Valida tu primer apellido."
+			button-id = "btnNextLastName"
+			input-id = "txtLastName"
+			max = "180"
+			min = "1">
+		</text-input>
+		
+	</main>
+</div>

@@ -1,0 +1,37 @@
+<progress-bar active = "3"></progress-bar>
+
+<main class="ui form"> 
+  <last-request
+                lista="{{cityCompanyQuestion}}">
+  </last-request>
+  <form name="formBasic " data-ng-submit="continueCompanyPhone()"
+        role="form" novalidate>
+    <div class="row">
+      <div class="col-xs-12 field">
+        <div class="">
+          <label for="identityNumbe" class=" font-title active-lbl"
+                 id="lblDocumet">¿Cu&aacute;l es el n&uacute;mero
+            telef&oacute;nico de la empresa d&oacute;nde trabajas? 
+          </label>
+        </div>
+        <radio-button option1=optionPhone option2=optionCellPhone model=phoneCompany>
+        </radio-button>
+        <input mask-phone="" class="active" type="text" id="celular-client"
+               name="phoneClient" ng-model="numberPhoneCompany" autocomplete="off"
+               autofocus required data-ng-show="phoneCompany =='phone'"> 
+        <input
+               mask-phone="cellPhone" class="active" type="text"
+               id="celular-client" name="phoneClient"
+               data-ng-model="numberPhoneCompany" autocomplete="off" autofocus
+               required data-ng-show="phoneCompany =='cellPhone'">
+        <div class="line">
+        <div ng-show="formBasic.$submitted">
+			<small class="error-msg"><div ng-bind=msnError></div></small>
+		</div>
+        </div>
+      </div>
+    </div>
+    <input name="btnNext" type="submit" data-ng-disabled="!numberPhoneCompany" class=" btn btn-primary"
+           value="Siguiente">
+  </form>
+</main>

@@ -1,0 +1,178 @@
+/*	nav {
+	  font-size: 0.35 * $base-size !important;
+	  color: $light-grey-01;
+	  font-weight: bold;
+	}*/
+
+  .nav-item {
+    padding-top: 0.3 * $base-size !important;
+    margin-right: 0.2 * $base-size !important;
+    margin-top: 48px !important;
+  }
+
+  .active.nav-item:after {
+    width: 70%;
+    height: 3px;
+    background-color: $light-blue;
+    top: 0.1 * $base-size !important;
+  }
+
+  .nav-item:after {
+    content:"";
+    background-color: $light-grey-01;
+    position: absolute;
+    bottom: 0;
+    top: - 0.02 * $base-size !important;
+    left: 0.30 * $base-size !important;;
+    width: 1.2 * $base-size;
+    height: 1px;
+  }
+
+
+ .complete.nav-item:after {
+    content:"";
+    background: transparent url("../images/check.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    top: - 0.02 * $base-size !important;
+    left: 0.30 * $base-size !important;;
+    width: 16px;
+    height: 16px;
+  }
+
+  .active {
+    font-size: 0.45 * $base-size !important;
+    font-weight: bold;
+    color: $light-blue;
+  }
+
+  .nav-logo {
+    background: url("../images/sm-logo-banco-de-bogota.png");
+    background-position-x: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    margin-top:32px !important;
+    margin-left: 34px !important;
+    width: 61px;
+	height: 61px;
+  }
+
+ /*NEW NAV CLASSESS*/
+
+ .new-nav-item {
+ 	margin-top: auto;
+ 	margin-bottom: auto;
+ 	margin-right: 30px;
+ }
+
+.new-active {
+ 	font-size: 0.45 * $base-size !important;
+    font-weight: bold;
+    color: $light-blue;
+ }
+
+ .new-item-banner {
+ 	border-top: 1px solid $light-grey-01;
+ 	margin-bottom: 12px;
+ }
+
+ .new-item-check {
+ 	background: transparent url("../images/check.png") no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.new-item-active {
+ 	border-top: 3px solid $light-blue;
+ 	margin-bottom: 7px;
+ }
+
+ /* FLEX VERSION*/
+
+ .nav-bar-container {
+	font-size: 0.35 * $base-size !important;
+	color: $light-grey-01;
+	font-weight: bold;
+	height: 10.9375%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+    flex-direction: column;
+  }
+
+ .progress-bar{
+ 	display: flex;
+ 	flex-direction: row;
+ 	text-align: center;
+ }
+
+ .progress-bar-logo {
+    background: url("../images/LogoBncoBGTA.png");
+    background-position-x: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    width: 61px;
+	height: 61px;
+	margin: auto 0 auto 2rem;
+  }
+
+ .step {
+ 	flex: 1;
+ 	padding: 2rem;
+ }
+
+ .normal .step-header {
+ 	border-top: 1px solid $light-grey-01;
+    height: 16px;
+ }
+
+ .selected .step-header {
+ 	border-top: 3px solid $light-blue;
+ 	height: 16px;
+ }
+
+ .complete .step-header {
+ 	background: transparent url("../images/check.png") no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .selected {
+ 	font-weight: bold;
+    color: $light-blue;
+    font-size: 0.45 * $base-size !important;
+ }
+
+ .container-progress{
+    display: flex;
+    width: 100%;
+
+ }
+.container-menu{
+    width: 100%;
+}
+.container-menu-left{
+    width: 100%;
+    text-align: left;
+    padding-left: (0.75 * $base-size) !important;
+
+}
+
+nav .title{
+    font-family: DTLArgoT;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.78;
+    color: #002c76 !important;
+ }
+nav .title-init{
+    font-weight: normal;
+}
+

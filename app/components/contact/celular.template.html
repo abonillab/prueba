@@ -1,0 +1,24 @@
+<progress-bar active = "2"></progress-bar>
+
+<main class="ui form"> <last-request
+	lista="{{prevEmail}}"></last-request>
+
+<form name="formBasic " data-ng-submit="celularValid()"
+	role="form" novalidate>
+	<div class="field">
+		<label for="celular-client" class=" font-title active-lbl"
+			id="lbl-client">¿Y tu número celular?</label> 
+			<input mask-phone="cellPhone"
+			class="active" type="tel" id="celular-client"
+			name="phoneClient" ng-model="cellphone" autofocus autocomplete="off"
+			autofocus required>
+			<div class="input-line"></div>
+		<div ng-show="formBasic.$submitted">
+			<small class="error-msg"
+				ng-show="!validCellPhone">El campo no cumple con el formato (300) 000 0000</small> 
+		</div>
+	</div>
+	<input name="btnNext" id="btnNextIncome" type="submit"
+		class=" btn btn-primary" value="Siguiente" ng-disabled="!cellphone">
+</form>
+</main>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- semantic styles -->
+    <link rel="stylesheet" href="semantic/semantic.min.css">
+    <link rel="stylesheet" href="semantic/components/icon.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+    <!-- other bower styles -->
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="accountOpenningFrontendApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ng-view></div>
+
+    <script src="config.js"></script>
+
+    <!-- bower js -->
+    <script src="scripts/vendor.js"></script>
+
+    <!-- main script -->
+    <script src="scripts/app.js"></script>
+
+
+    <script src="components/account/accounts-data.service.js"></script>
+    <script src="components/account/account.controller.js"></script>
+
+
+    <script src="components/contact/contact-data.service.js"></script>
+    <script src="components/contact/contact.controller.js"></script>
+
+    <script src="components/commons/account-opening-data.service.js"></script>
+    <script src="scripts/directives/cellphone.directive.js"></script>
+    <script src="components/suggest_list/suggest.directive.js"></script>
+    <script src="components/progress-bar/progress.bar.directive.js"></script> <!-- TODO delete if works -->
+    <script src="scripts/directives/date.input.js"></script>
+    <script src="scripts/directives/radio-button.directive.js"></script>
+    <script src="components/valid_mask/valid-mask.service.js"></script>
+    <script src="components/text-input/text.input.directive.js"></script>
+
+    <script src="components/occupation/occupation-data.service.js"></script>
+    <script src="components/occupation/occupation.controller.js"></script>
+
+    <script src="scripts/services/bank_account_service.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/create-bank-account.controller.js"></script>
+    <script src="scripts/routes.js"></script>
+
+    <!-- Front end apps --><!--
+    <script src="scripts/views/helper_methods.js"></script> -->
+
+    <script src="scripts/identificacion/identity.controller.js"></script>
+    <script src="scripts/identificacion/next.identity.controller.js"></script>
+    <script src="components/basic_information/basic.information.controller.js"></script>
+    <!-- Directives -->
+    <script src="scripts/directives/maskNum.js"></script>
+
+    <script src="scripts/directives/maskMoney.js"></script>
+
+    <script src="scripts/directives/capitalize.js"></script>
+    <script src="scripts/directives/alpha.input.js"></script>
+    <script src="scripts/directives/focus_input.js"></script>
+    <script src="scripts/directives/template_last_rq.js"></script>
+    <script src="scripts/directives/validMask.js"></script>
+
+
+    <script src="components/date-input/main.js"></script>
+    <script src="components/number-input/main.js"></script>
+    <script src="components/money-input/main.js"></script>
+    <script src="components/autocomplete/main.js"></script>
+    <script src="components/boolean-input/main.js"></script>
+    <script src="components/last-request/template_last_rq.js"></script>
+    <script src="components/semantic-ui-search/sort-autocomplete.js"></script>
+    <script src="components/semantic-ui-search/main.js"></script>
+
+</body>
+</html>

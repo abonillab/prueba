@@ -1,0 +1,17 @@
+<nav class="nav-bar-container white"><!-- ui grid -->
+	<div class="progress-bar"><!-- seven column row -->
+		
+		<div class="progress-bar-logo"></div>
+		<div ng-show="active" class="container-progress">
+		<div data-ng-class = "active?getClasses(1):''"><div class="step-header"></div><div class = "font-title">Cuenta</div></div>
+		<div data-ng-class = "active?getClasses(2):''"><div class="step-header"></div><div class = "font-title">Personal</div></div>
+		<div data-ng-class = "active?getClasses(3):''"><div class="step-header"></div><div class = "font-title">Laboral</div></div>
+		<div data-ng-class = "active?getClasses(4):''"><div class="step-header"></div><div class = "font-title">Financiera</div></div>
+		<div data-ng-class = "active?getClasses(5):''"><div class="step-header"></div><div class = "font-title">Activaci&oacute;n</div></div>
+		</div>
+		<div ng-show="!active" data-ng-class="second?'container-menu-left':'container-menu'">
+		<span data-ng-class="second?'title-init title':'title'">{{title}}</span><br/>
+		<span class = "title">{{second}}</span>	
+		</div>
+	</div>
+</nav>

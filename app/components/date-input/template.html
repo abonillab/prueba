@@ -1,0 +1,16 @@
+<form name="formBasic" data-ng-submit="nextStep()" role="form" class="ui form" novalidate>
+
+  <div class="field">
+    <label for={{param}} class="font-title active-lbl" id="lblDocumet">{{label}}</label>
+
+    <input class="active" id={{param}} type="text" name="paramName" date-mask clean="true" ng-model="value" autocomplete="off" autofocus>
+    <div class="line"></div>
+    <br>
+
+    <p id="{{param + 'Error'}}" ng-show="error" class="error-msg">{{error}}</p>
+
+    <input name="btnNext" id="{{param + 'SubmitBtn'}}" type="submit" class="btn btn-primary" value="Siguiente" data-ng-disabled="!value">
+
+  </div>
+</form>
+

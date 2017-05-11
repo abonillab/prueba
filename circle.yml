@@ -1,0 +1,21 @@
+machine:
+  node:
+    version: 4.0.0
+  ruby:
+    version: 2.4.1
+dependencies:
+  pre:
+    - npm install -g gulp
+    - npm install bower
+    - gem install compass
+    - npm install
+    - bower install
+test:
+  override:
+    - gulp test
+deployment:
+  production:
+    branch: master
+    commands:
+      - NODENV=qa gulp build
+      - gulp deploy

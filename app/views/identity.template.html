@@ -1,0 +1,25 @@
+<progress-bar active = "2"></progress-bar>
+
+<main  class="ui form">
+    <last-request-new title="Cuenta Seleccionada:" icon="images/profile@2x.png" message="{{savedValues.accountType}}"></last-request-new>
+
+    <form name="formBasic "  data-ng-submit="continue_indentity()" role="form" novalidate>
+
+            <div class="field  flex-container"  ng-class="getErrorClass(formBasic.numberId,formBasic.$submitted)">
+                <div ng-show="formBasic.$submitted">
+                    <small class="error-msg" ng-show="formBasic.numberId.$error.required || formBasic.numberId.$error.minlength">Valida el n&uacute;mero de tu documento.</small>
+                </div>
+                 <div class="line"></div>
+                    <input class="active" type="tel" id="identityNumber" name="numberId" ng-model="identityNumber" maxlength="13" required  ng-minlength="7" data-ng-class="formBasic.$invalid?error:''" autocomplete="off"  input-focus="flap" data-input-mask autofocus focus-error="formBasic.$invalid"   >
+                <div class="">
+
+                <label for="identityNumber" class=" font-title active-lbl" id="lblDocumet">Digita tu c&eacute;dula de ciudadan&iacute;a
+                </label>
+             </div>
+            </div>
+        </div>
+
+        <input name="btnNext" type="submit" class=" btn btn-primary" id="btnNextIdentity" value="Siguiente" data-ng-disabled="!identityNumber">
+
+    </form>
+</main>

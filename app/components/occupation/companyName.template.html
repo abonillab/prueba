@@ -1,0 +1,26 @@
+<progress-bar active = "3"></progress-bar>
+
+<main class="ui form"> 
+  <last-request
+                lista="{{occupationQuestion}}">
+  </last-request>
+  <form name="formBasic " data-ng-submit="continueCompanyName()"
+        role="form" novalidate>
+    <div class="row">
+      <div class="col-xs-12 field">
+        <div class="">
+          <label for="identityNumbe" class=" font-title active-lbl"
+                 id="lblDocumet">¿Cuál es el nombre de la empresa donde
+            trabajas? 
+          </label> 
+          <input type="text" capitalize data-ng-model="nameCompany"
+                 id="txtCompanyName" />
+          <div class="line">
+          </div>
+        </div>
+      </div>
+    </div>
+    <input name="btnNext" data-ng-disabled="!nameCompany" type="submit"
+           class=" btn btn-primary" value="Siguiente">
+  </form>
+</main>
